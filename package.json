@@ -37,7 +37,7 @@
     "build-storybook": "build-storybook -s public",
     "lint": "npx eslint . --fix --cache && npx prettier --write .",
     "prepare": "husky install",
-    "testAll": "craco test --watchAll=false --bail",
+    "testAll": "craco test --watchAll=false --bail --passWithNoTests",
     "test:coverage": "craco test --watchAll=false --coverage .",
     "test:generate-output": "craco test --watchAll=false --json --outputFile=.jest-test-results.json"
   },
