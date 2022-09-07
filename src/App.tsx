@@ -10,8 +10,10 @@ const App = () => (
   <ThemeProvider theme={muiTheme}>
     <CssBaseline />
     <Routes>
-      <Route path={paths.home} element={<HomePage />} />
-      <Route path="*" element={<Navigate to={paths.home} />} />
+      <Route path={paths.home.url} element={<HomePage />} />
+      <Route path={paths.staff.url} element={<HomePage />} />
+      <Route path={paths.contact.url} element={<HomePage />} />
+      <Route path="*" element={<Navigate to={paths.home.url} />} />
     </Routes>
   </ThemeProvider>
 );
